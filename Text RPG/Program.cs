@@ -40,6 +40,7 @@ namespace Text_RPG
             */ 
             //함수별로 정리해 두고 찾아보기 (레고 블럭이라고 생각해서 조립하기)
             //함수화 한다 = 
+
         }
 
         static void GameDataSetting()
@@ -69,7 +70,13 @@ namespace Text_RPG
             Console.WriteLine(" ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝ ");
             Console.WriteLine("            ");
             Console.WriteLine(" ﻿      ┈ ┈ ┈ ⋞ 💠⃟💠⃟💠⃟💠⃟  ⋟ ┈ ┈ ﻿┈ ┈ ⋞ 💠⃟💠⃟💠⃟💠⃟  ⋟ ┈ ┈ ┈ ┈ ⋞ 💠⃟💠⃟💠⃟💠⃟  ⋟ ┈ ┈ ┈ ┈ ⋞ 💠⃟💠⃟💠⃟💠⃟  ⋟ ┈ ┈ ┈    ");
-          
+
+            string s = "출력할문자열";
+            for (int i = 0; i < s.Length; i++)
+            {
+                Console.Write(s[i].ToString());
+                Thread.Sleep(10);
+            }
             // 캐릭터 정보 세팅
             player = new Character("Chad", "조직 보스", 1, 10, 5, 100);
             player.Equitem(new Item("Gun", 20, true, 0, 5, 5));
